@@ -1,0 +1,29 @@
+* {box-sizing:border-box; -moz-box-sizing:border-box; margin:0; padding:0;}
+body {background:#dfdfdf; font:13px/20px Tahoma;}
+#layoutContainer {background:#fff; border:1px solid #d5d5d5; box-shadow:0 0 4px rgba(0,0,0,0.1); max-width:655px; margin:25px auto; padding:0 0 35px;}
+
+/* Form styles */
+form {border-bottom:2px solid #d2d2d2; display:none; overflow:hidden; padding:24px;}
+.js form {display:block}
+fieldset {border:none;}
+legend {display:none;}
+.form-block {margin:0 0 24px;}
+label {color:#ababab; display:inline-block; width:16%; padding:12px 0 0; vertical-align: top }
+input, textarea {border:1px solid #d2d2d2; display:inline-block; font-family:inherit;  padding:8px 16px; width:84%;}
+textarea {min-height:76px;} 
+button {background:#2f81f1; border:2px solid #07c; color:#fff; cursor:pointer; font-size:11px; float:right; padding:8px 32px; text-transform:uppercase;}
+button:hover, button:focus {background:#07c;}
+
+/* Error messaging */
+.layoutErrors, noscript {color:#f34f51; font-weight:700; padding:8px 0 0;}
+
+/* Task display */
+article {border:1px solid #d2d2d2; margin:24px 24px 0; padding:16px 0 0; opacity:0; transition:1s opacity;}
+article h2, article p {margin:0 0 16px; padding:0 24px;}
+article h2 {color:#737373; font-size:16px; font-weight:400; }
+article p {color:#ababab; }
+
+/* Task actions */
+article .action {border-top:1px solid #d2d2d2; padding:4px 24px; text-align:right; }
+article .action a {color:#f34f51; cursor:pointer; font-size:10px; font-weight:700; text-decoration:none; text-transform:uppercase;}
+article .action a:hover, article .action a:focus {text-decoration:underline;}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Task manager</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+	<link href="./styles.css" rel="stylesheet" />
+	<script src="./scripts.js"></script>
+</head>
+
+<body>
+	<script>document.body.className += ' js';</script>
+
+	<div id="layoutContainer">
+        <form id="addTask" method="POST" action="./#">
+			<fieldset>
+				<legend>Add tasks</legend>
+				<div class="form-block"><label for="title">Title</label><input id="title" name="title" type="text" required="true" /></div>
+				<div class="form-block"><label for="content">Content</label><textarea id="content" name="content" required="true"></textarea></div>
+			</fieldset>
+			<button type="submit">Add task</button>
+		</form>
+        <noscript>Please note that javascript is required to view this app</noscript>
+	</div>
+
+</body>
+
+</html>
