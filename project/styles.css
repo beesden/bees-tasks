@@ -9,21 +9,25 @@ fieldset {border:none;}
 legend {display:none;}
 .form-block {margin:0 0 24px;}
 label {color:#ababab; display:inline-block; width:16%; padding:12px 0 0; vertical-align: top }
-input, textarea {border:1px solid #d2d2d2; display:inline-block; font-family:inherit;  padding:8px 16px; width:84%;}
+input, textarea {border:1px solid #d2d2d2; display:inline-block; font-family:inherit;  padding:8px 16px; max-width:84%; width:84%;}
 textarea {min-height:76px;} 
 button {background:#2f81f1; border:2px solid #07c; color:#fff; cursor:pointer; font-size:11px; float:right; padding:8px 32px; text-transform:uppercase;}
 button:hover, button:focus {background:#07c;}
 
 /* Error messaging */
-.layoutErrors, noscript {color:#f34f51; font-weight:700; padding:8px 0 0;}
+.layoutErrors, .layoutMessages, noscript {font-weight:700; padding:8px 0 0;}
+.layoutErrors {color:#c7254e; }
+.layoutMessages {color:#468847; }
 
 /* Task display */
-article {border:1px solid #d2d2d2; margin:24px 24px 0; padding:16px 0 0; opacity:0; transition:1s opacity;}
+article {border:1px solid #d2d2d2; margin:24px 24px 0; padding:16px 0 0; opacity:0; transition:0.3s opacity;}
 article h2, article p {margin:0 0 16px; padding:0 24px;}
 article h2 {color:#737373; font-size:16px; font-weight:400; }
 article p {color:#ababab; }
 
 /* Task actions */
-article .action {border-top:1px solid #d2d2d2; padding:4px 24px; text-align:right; }
-article .action a {color:#f34f51; cursor:pointer; font-size:10px; font-weight:700; text-decoration:none; text-transform:uppercase;}
+article .action {border-top:1px solid #d2d2d2; overflow:hidden; padding:4px 24px; text-align:right; }
+article .action .editTask {color:#538f51; float:left;}
+article .action .removeTask {color:#f34f51; float:right;}
+article .action a {cursor:pointer; font-size:10px; font-weight:700; text-decoration:none; text-transform:uppercase;}
 article .action a:hover, article .action a:focus {text-decoration:underline;}
