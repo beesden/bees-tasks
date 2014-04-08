@@ -199,6 +199,7 @@
 			}
 			formSubmit(form, taskWrapper);
 		},
+		// Expose private functions to the outside world
 		add: saveTask,
 		get: displayTask,
 		remove: deleteTask
@@ -206,8 +207,9 @@
 
 }(document));
 
+
 window.onload = function() {
-	// Load a sample task via the API - we wouldn't want an empty screen after all
+	// Demonstrate adding a sample task via the API - we wouldn't want an empty screen after all
 	taskman.add({
 		'id': '01', 
 		'title':'Lorem ipsum <em>dolor sit amet</em>',
